@@ -1,25 +1,65 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #f4a261;
-    color: white;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+
     text-align: center;
+    padding: 0; /* Remove padding inside the header */
+    margin: 0; /* Remove any margin around the header */
 }
+
+/* Logo addition */
+#logo {
+        display: block;
+        margin: 0 auto; /* Remove any margin around the logo */
+        padding: 0; /* Remove any padding around the logo */
+        width: 300px; /* Adjust logo size to your preference */
+        height: auto; /* Maintain aspect ratio of logo */
+        transition: transform 0.5s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Menu Styles */
+nav {
+    text-align: center;
+    height: 165px;
+    margin-top: 10px; /* Adjust the space between the logo and navigation */
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none; /* Remove default list styling */
     padding: 0;
 }
+
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Space between menu items */
 }
+
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set text color */
+    font-family:serif;
+    font-size: 18px; /* Font size for menu items */ 
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: rgb(187, 6, 6); /* Change to your desired hover color */
+    text-decoration: underline; /* Add underline */
 }
 footer {
     background-color: #264653;
@@ -30,3 +70,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
